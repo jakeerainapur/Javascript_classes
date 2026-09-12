@@ -1,0 +1,15 @@
+<h1 id="title">Welcome</h1>
+
+<form onsubmit="showName(); return false;">
+    <input type="text" id="username" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+function showName() {
+    document.getElementById("title").textContent =
+        "Welcome " + document.getElementById("username").value;
+}
+</script>
